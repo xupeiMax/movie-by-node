@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      .col-md-6
+        form(method="POST",action="/user/signup",role="form")
+                .form-group
+                    label(for="signupName") 用户名
+                    input#signupName.form-control(name="user[name]",type="text")
+                .form-group
+                    label(for="signupPassword") 密码
+                    input#signupPassword.form-control(name="user[password]",type="text")
+                button.btn.btn-default(type="button") 取消
+                button.btn.btn-success(type="submit") 提交

@@ -1,0 +1,26 @@
+{
+  "name": "imooc",
+  "authors": [
+    "xupeiMax <xupeiMax@github.com>"
+  ],
+  "description": "imooc movie",
+  "main": "",
+  "keywords": [
+    "imooc",
+    "movie"
+  ],
+  "license": "MIT",
+  "private": true,
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap":"~4.1.0"
+  }
+}
