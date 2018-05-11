@@ -3,6 +3,7 @@ var path = require('path');
 var serveStatic = require('serve-static');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var connectMultiparty = require('connect-multiparty');
 var expressSession = require('express-session');
 var logger = require('morgan');
 var mongoose = require('mongoose');
@@ -18,6 +19,7 @@ app.locals.moment = require('moment');
 app.use(serveStatic(path.join(__dirname,'public')));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(cookieParser());
+app.use(connectMultiparty());
 app.use(expressSession({
     secret: 'imooc',
     store: new mongoStore({

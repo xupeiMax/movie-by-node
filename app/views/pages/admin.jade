@@ -4,7 +4,7 @@ block content
   .container
     .row
       .col-sm-12
-        form.form-horizontal(method="post",action="/admin/movie/new",role="form")
+        form.form-horizontal(method="post",action="/admin/movie/new",role="form",enctype="multipart/form-data")
           .form-group
             label.col-sm-2.control-label 豆瓣同步
             .col-sm-10
@@ -46,6 +46,10 @@ block content
             .col-sm-10
               input#inputPoster.form-control(type="text",name="movie[poster]",value=movie.poster)
           .form-group
+            label.col-sm-2.control-label(for="uploadPoster") 上传海报
+            .col-sm-10
+              input#uploadPoster(type="file",name="uploadPoster")
+          .form-group
             label.col-sm-2.control-label(for="inputFlash") 片源地址
             .col-sm-10
               input#inputFlash.form-control(type="text",name="movie[flash]",value=movie.flash)
@@ -59,5 +63,5 @@ block content
               input#inputSummary.form-control(type="text",name="movie[summary]",value=movie.summary)
           .form-group
             .col-sm-offset-2.col-sm-10
-            button.btn.btn-default(type="submit") 录入
+              button.btn.btn-default(type="submit") 录入
   script(src="/js/admin.js")  

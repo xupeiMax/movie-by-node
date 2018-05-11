@@ -1,17 +1,7 @@
 .page-header{
-    width: 100%;
-    padding: 20px 0;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ccc;
-    background: #fbfbfb;
+    margin-top: 0px;
+    /* background: #fbfbfb; */
 }
-.navbar-fixed-bottom {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid #ccc;
-    background: #fbfbfb;
-}
-.row{
-    margin-bottom: 100px;
+.mb50{
+    margin-bottom: 50px;
 }

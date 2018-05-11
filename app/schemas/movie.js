@@ -12,6 +12,7 @@ var MovieSchema = new Schema({
     flash: String,
     summary: String,
     category:{type: ObjectId, ref: 'Category'},
+    pv:{type: Number,default: 0},
     meta: {
         createAt:{
             type: Date,
