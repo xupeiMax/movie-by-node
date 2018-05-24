@@ -17,6 +17,7 @@
     "morgan": "^1.9.0",
     "node-gyp": "^3.6.2",
     "serve-static": "^1.13.2",
+    "should": "^13.2.1",
     "underscore": "^1.9.0"
   },
   "devDependencies": {
@@ -24,10 +25,12 @@
     "grunt-concurrent": "^2.3.1",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-watch": "^1.0.1",
-    "grunt-nodemon": "^0.4.2"
+    "grunt-mocha-test": "^0.13.3",
+    "grunt-nodemon": "^0.4.2",
+    "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "grunt mochaTest --timeout=5000",
     "start": "node app.js"
   },
   "keywords": [
